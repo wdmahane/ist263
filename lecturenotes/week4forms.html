@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+<body>
+    <h1>Take Out Food Order</h1>
+    <form method="post" action="">
+        <!-- All of these are inline tags, not block, so breaks are needed -->
+        <label for="fullname">Enter full name: </label> 
+        <input type="text" id="fullname" name="fullname"> <br>
+        <label for="specialrequest">Enter special requests: </label>
+        <textarea id="specialrequest" name="specialrequest"></textarea> <br>
+        <p>Do you want pickup or delivery?</p>
+        <!-- Radio buttons must have the same name to link up the options -->
+        <input type="radio" id="delivery1" name="delivery" value="pickup" checked>
+        <!-- 'Checked' makes that item the default -->
+        <label for="delivery1">pickup</label>
+        <input type="radio" id="delivery2" name="delivery" value="delivery">
+        <label for="delivery2">delivery</label> <br>
+        <!-- Checkboxes are NOT linked by name -->
+        <input type="checkbox" id="plastic" name="plastic">
+        <label for="plastic">Need plastic utensils?</label> <br>
+        <!-- How to create a drop down select menu -->
+        <label for="region">Delivery Region: </label>
+        <select name="region" id="region">
+            <option value="westcott">Westcott</option>
+            <option value="downtown">Downtown</option>
+            <option value="eastwood">Eastwood</option>
+        </select>
+        <br>
+        <input type="submit" value="submit form">
+    </form>
+</body>
+</html>
