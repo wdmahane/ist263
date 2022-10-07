@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Contact</h1>
+        <p>
+            Will Mahaney <br>
+
+            323H Hinds Hall <br>
+            Syracuse, NY 13244 <br>
+        </p>
+
+        <p>
+            <a href="mailto:wdmahane@syr.edu" target="_blank">Will Mahaney Email</a> <br>
+        </p>
+
+            <a href="https://www.linkedin.com/in/william-mahaney/" target="_blank"><img src="../images/linkedin-sized.png" alt="LinkedIn"> My LinkedIn Profile </a> <br>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1525377499593!2d-76.13555668467963!3d43.03822197914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663250279644!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br>
+        <br>
+        <br>
+
+        <form action="https://formspree.io/f/xaykoyzn" method="POST">
+            <!-- User name text box -->
+            <label for="username">Enter your name: </label> 
+            <input type="text" id="username" name="username"> <br>
+
+            <!-- User year radio button -->
+            <p>What year are you?</p>
+            <input type="radio" id="yearfresh" name="year" value="freshman">
+            <label for="yearfresh">Freshman</label>
+
+            <input type="radio" id="yearsoph" name="year" value="sophomore">
+            <label for="yearsoph">Sophomore</label>
+
+            <input type="radio" id="yearjr" name="year" value="junior">
+            <label for="yearjr">Junior</label>
+
+            <input type="radio" id="yearsr" name="year" value="senior">
+            <label for="yearsr">Senior</label>
+
+            <input type="radio" id="yearother" name="year" value="other">
+            <label for="yearother">Other</label>
+            <br>
+
+            <!-- User info text area -->
+            <label for="usermessage">Message for Will: </label>
+            <textarea id="usermessage" name="usermessage"></textarea>
+            <br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Send to Will">
+        </form>
+    </body>
+</html>

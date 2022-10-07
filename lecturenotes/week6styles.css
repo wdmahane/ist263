@@ -1,0 +1,21 @@
+/* Multipe Select */
+p, ul {
+    color:darkorchid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+/* Descendant Selector */
+p a {
+    color:green;
+}
+/* id selector */
+#firstparagraph {
+    color: mediumspringgreen;
+}
+/* class selector */
+.pinktext {
+    color:fuchsia
+}
+a {
+    text-decoration: none;
+}
