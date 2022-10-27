@@ -1,0 +1,24 @@
+body {background-color: #ddddff; color: #433650;}
+p {color: #433650;}
+a {color: #f07dea}
+h1, h2 {color: #5962F7}
+nav {background-color: #284D73;}
+nav a {color: #F2C3AA}
+nav a:hover{background-color: #96F9F7;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
+.motto {float: right;} /* This is just for the footer of index page */
+/* The next few lines are for the contact page */
+.row1, .row2 {display: flex;  background-color: #797979; border-radius: 1.5em; padding: 20px; margin: 25px;} 
+.row2 {align-items: center; justify-content: center;}
+.r1c1, .r1c2, .r2c1, .r2c2 {margin: 10px;}
+h1{text-align: center;}
+.icon{width: 1.5em;}
+.skillscol1{display: flex; flex: 3; justify-content: space-around; align-items: center;}
+.skillscol2{display: flex; background-color: #333333; color: #c19ce9 ; border-radius: 1.5em; flex: 1; padding: 2em;}
+.skillsoutterflex{display: flex;}
+.intro, .skillsoutterflex{margin: 3em;}
+.h2{text-align: left;}
+.introflex{display: flex}
+.introflexrow{flex: 3}
+.empty{flex: 1}
