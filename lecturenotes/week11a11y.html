@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #skip{
+            background-color: #ffaa44;
+            border: 1px solid #000000;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+        }
+        #skip:focus{
+            left: 10px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- # sign in href means bokmark link -->
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a> <br>
+    <a href="http://www.syr.edu">SU</a> <br>
+    <a href="http://www.amazon.com">Amazon</a> <br>
+    <a href="http://www.google.com">Google</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae amet architecto tenetur voluptates, nisi optio tempore soluta exercitationem ullam adipisci sint ut similique veritatis voluptatum id saepe autem dolor.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a quos nemo, explicabo aperiam saepe maiores necessitatibus libero eius qui laudantium blanditiis fuga provident dolor nesciunt, ex veritatis ab neque?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deleniti quidem officiis quaerat cumque ducimus, doloremque reprehenderit hic consectetur. Maiores incidunt praesentium nostrum alias quo temporibus iste, quisquam illo sequi.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa deserunt id velit dolorem est aliquam natus iure quibusdam unde aperiam harum debitis dignissimos officiis reiciendis nulla, fugit ullam officia excepturi.</p>
+
+    <!-- this is part of our bookmark link -->
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ea, possimus deleniti velit itaque, sit laudantium necessitatibus sint reiciendis amet at dolor beatae nihil cumque illo neque, aspernatur recusandae. Natus.</p>
+
+</body>
+</html>
