@@ -112,6 +112,9 @@ h1{
 .empty{
     flex: 1
 }
+#ischoollink{
+    color:#b130aa;
+}
 
 /* Skip to Content button */
 #skip{
