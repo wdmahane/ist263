@@ -11,6 +11,10 @@ p {
 }
 h1 {
     justify-items: center;
+    background-color: #443344;
+}
+footer {
+    background-color: #000000;
 }
 
 /* making the nav bar centered */ 
