@@ -1,0 +1,53 @@
+/* Styles for every page */
+body {
+    background-image: url("images/home3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+}
+p {
+    background-color: rgba(68, 51, 68, .7);
+}
+h1 {
+    justify-items: center;
+    background-color: rgba(68, 51, 68, .7);
+}
+footer {
+    background-color: #000000;
+}
+h1, h2 {font-family: 'Roboto Mono', monospace;}
+
+/* making the nav bar centered */ 
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+.navitem{
+    font-size: 1.15em;
+    color: #dddddd;
+    background-color: rgba(68, 51, 68, .7);
+}
+
+/* index page styles */
+.headerimages{
+    display: flex;
+    justify-content: space-around;
+}
+.indexrow1, .indexrow2{
+    display: flex;
+    align-items: center;
+}
+.indeximg {
+    padding: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* garden and harrington styles */
+.gardenrow1, .harrrow1{
+    display: flex;
+}
