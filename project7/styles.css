@@ -1,11 +1,5 @@
 /* Styles for every page */
-body {
-    background-image: url("images/home3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #dddddd;
-}
+
 p {
     background-color: rgba(68, 51, 68, .7);
     padding: 40px;
@@ -155,3 +149,12 @@ h1, h2 {font-family: 'Roboto Mono', monospace;}
     from {opacity: .4}
     to {opacity: 1}
     }
+
+
+body {
+    background-image: url("images/home3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #dddddd;
+}
