@@ -10,39 +10,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }        
+    </script>
 </head>
 <body>
-    <div class="navigation">
-        <nav>
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a> <br>
+    <nav>    
+        <div class="navigation">
             <a href="index.html" class="navitem">Home</a>
             <a href="garden.html" class="navitem">The Garden</a>
-            <a href="harrington.html" class="navitem">The Harrington</a> 
-        </nav>
-    </div>
+            <a href="harrington.html" class="navitem">The Harrington</a>
+        </div>
+    </nav>
 
     
     <header>
+        <div class="title">
+            <h1>Syracuse House Shows</h1>
+        </div>
+    </header>
+ 
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="../project7/images/home1small-cropped.jpg" style="width:100%" onload="showSlides(1)">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="../project7/images/home2small.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="../project7/images/home4small.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="../project7/images/harr6-small.jpg" style="width:100%">
+          </div>
+ 
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+
+<!--    
+    <figure>
         <div class="headerimages">
             <img src="images/home1small.jpg" alt="Studio 89">
             <img src="images/home2small.jpg" alt="Charlie Burg">
             <img src="images/home4small.jpg" alt="Max Marcy">
         </div>
-    </header>
-    
-    <main>
-        <div class="title">
-        <h1>Syracuse House Shows</h1>
-        </div>
+    </figure>
+-->
 
-        <p>
+
+    <main>
+
+        <p id="content">
             College basements are often thought of as filled with alcohol, loud dance music, and too many people desperately searching for a good time. While this may seem appealing to some, it does not appeal to all. To solve this lack of variety, and to appeal to those who enjoy a more relaxed night out, house shows were formed. 
         </p>
 
 
         <div class="indexrow1">
-            <div class="indeximg">
-            <img src="images/home6small.jpg" alt="Bri Gillard" >
-            </div>
+            <figure>
+            <img src="images/home6small.jpg" class="indeximg" alt="Bri Gillard" >
+            </figure>
 
             <div class="text">
             <p>
@@ -54,10 +131,12 @@
         
         <div class="indexrow2">
             <p>
-                The more recent names on the house show lineups include NONEWFRIENDS, Sarah Gross, Lauren Juzang, Bri Gillard, Tessa, Froggies, Studio 89, The Knu, Pop Culture, and Saint Luke. These artists are looking for any location to showcase their music, including local established venues. Many of these bands will play concerts at Funk n Waffles, the Westcott Theatre, Wunderbar, The Lost Horizon, and Crazy Daisies. While these more established venues give exposure, house shows generate a thriving fanbase. You will not find a more lively scene than the basement of a house off Euclid that is packed full with college students all waiting to hear live music. House shows have drawn such a large following that the Westcott has now held two shows only highlighting Syracuse artists. Both of which have drawn higher than average crowds to the the venue that usually hosts national touring groups. 
+                The more recent names on the house show lineups include NONEWFRIENDS, Sarah Gross, Lauren Juzang, Bri Gillard, Tessa, Froggies, Studio 89, The Knu, Pop Culture, and Saint Luke. These artists are looking for any location to showcase their music, including local established venues. Many of these bands will play concerts at Funk n Waffles, the Westcott Theatre, Wunderbar, The Lost Horizon, and Crazy Daisies. While these more established venues give exposure, house shows generate a thriving fanbase. You will not find a more lively scene than the basement of a house off Euclid that is packed full with college students all waiting to hear live music. House shows have drawn such a large following that the Westcott has now held two shows highlighting Syracuse student artists. Both of which have drawn higher than average crowds to the the venue that usually hosts national touring groups. 
             </p>
 
+            <figure>
             <img src="images/home5small.jpg" class="indeximg" alt="Student Artist">
+            </figure>
         </div>
 
         
